@@ -4,7 +4,7 @@ import { PokeContainer } from './components/PokeContainer';
 export const Pokedex = () => {
   const [numberOfPokemons, setNumberOfPokemons] = useState(151);
   return (
-    <div>
+    <>
       <h1>Pokedex</h1>
       <h3>Generations:</h3>
       <div className="generations-container">
@@ -18,6 +18,6 @@ export const Pokedex = () => {
         <button onClick={() => setNumberOfPokemons(891)}>8th Gen</button>
       </div>
       <PokeContainer numberOfPokemons={numberOfPokemons}/>
-    </div>
+    </>
   );
 };

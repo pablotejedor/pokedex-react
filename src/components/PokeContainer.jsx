@@ -11,7 +11,8 @@ export const PokeContainer = ({ numberOfPokemons }) => {
             img: poke.sprites.front_default,
             name: poke.name,
             id: poke.id,
-            type: poke.types[0].type.name,
+            type: poke.types.map(types => types.type.name[0].toUpperCase() + types.type.name.slice(1)).join(", "),
+            types: poke.types.map(types => types.type.name)
           };
         })
       );
