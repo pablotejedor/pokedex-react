@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Pokemon } from './Pokemon';
 import { getPokemons } from 'C:/Programación/React/pokedex-react/src/helpers/getPokemons.jsx';
-export const PokeContainer = ({ numberOfPokemons }) => {
+export const PokeContainer = ({ rangeOfPokemons }) => {
   const [pokemons, setPokemons] = useState([]);
   useEffect(() => {
-    getPokemons(numberOfPokemons).then(poke => {
+    getPokemons(rangeOfPokemons).then(poke => {
       setPokemons(
         poke.map(poke => {
           return {
@@ -17,7 +17,7 @@ export const PokeContainer = ({ numberOfPokemons }) => {
         })
       );
     });
-  }, [numberOfPokemons]);
+  }, [rangeOfPokemons]);
   return (
     <div className="poke-container">
       {pokemons.map(poke => (

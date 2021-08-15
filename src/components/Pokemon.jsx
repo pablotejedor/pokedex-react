@@ -3,7 +3,7 @@ import React from 'react';
 export const Pokemon = ({ pokemon }) => {
   //obtiene un arreglo con los tipos de cada pokemon
   // console.log(pokemon.types.map(types => types.type.name))
-  console.log(pokemon.types);
+  // console.log(pokemon.types);
   const colors = {
     fire: '#F05030',
     grass: '#78C850',
