@@ -15,10 +15,6 @@ body {
   flex-direction: column;
 }
 
-.generations-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
 
 .poke-container {
   display: flex;
