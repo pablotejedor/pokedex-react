@@ -64,6 +64,10 @@ button:hover {
     grid-template-columns: 1fr 1fr;
   }
 
+  button {
+    width: 20vw;
+  }
+    
   .poke-card {
     width: 30vw;
   }
