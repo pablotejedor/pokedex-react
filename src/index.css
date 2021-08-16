@@ -13,8 +13,8 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
-
 
 .poke-container {
   display: flex;
@@ -25,15 +25,16 @@ body {
 }
 
 .poke-card {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   border-radius: 20px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
   margin: 10px;
   padding: 20px;
   text-align: center;
-  color: rgba(0, 0, 0, 0.7);
+  width: 10vw;
 }
 
 button {
@@ -44,9 +45,26 @@ button {
   font-size: 1rem;
   margin: 10px;
   padding: 10px;
-  width: 20vw;
+  width: 10vw;
 }
 
 button:hover {
   transform: scale(1.1);
 }
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+@media (max-width: 600px) {
+  .poke-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .poke-card {
+    width: 30vw;
+  }
+} ;
