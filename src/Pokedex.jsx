@@ -11,8 +11,8 @@ export const Pokedex = () => {
         <button onClick={() => setRangeOfPokemons([1, 151])}>1st Gen</button>
         <button onClick={() => setRangeOfPokemons([152, 251])}>2nd Gen</button>
         <button onClick={() => setRangeOfPokemons([252, 386])}>3rd Gen</button>
-        <button onClick={() => setRangeOfPokemons([387, 493])}>4th Gen</button>
-        <button onClick={() => setRangeOfPokemons([494, 649])}>5th Gen</button>
+        <button onClick={() => setRangeOfPokemons([387, 494])}>4th Gen</button>
+        <button onClick={() => setRangeOfPokemons([495, 649])}>5th Gen</button>
         <button onClick={() => setRangeOfPokemons([650, 721])}>6th Gen</button>
         <button onClick={() => setRangeOfPokemons([722, 809])}>7th Gen</button>
         <button onClick={() => setRangeOfPokemons([810, 891])}>8th Gen</button>
