@@ -8,7 +8,7 @@ export const Pokedex = () => {
   const nextHandler = () => {
     if (rangeOfPokemons[1] + rangeVariation > 891) {
       setRangeOfPokemons([
-        (rangeOfPokemons[0] = 870),
+        (rangeOfPokemons[0] = 862),
         rangeOfPokemons[1] + (891 - rangeOfPokemons[1]),
       ]);
     } else {
