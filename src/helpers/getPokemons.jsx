@@ -1,11 +1,5 @@
+import { fetchPokemons } from './fetchPokemons';
 export const getPokemons = async rangeOfPokemons => {
-  const fetchPokemons = async id => {
-    const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
-    const result = await fetch(url);
-    const pokemon = await result.json();
-    return pokemon;
-  };
-
   const promises = [];
   for (let i = rangeOfPokemons[0]; i <= rangeOfPokemons[1]; i++) {
     promises.push(fetchPokemons(i));
@@ -18,16 +12,14 @@ export const getPokemons = async rangeOfPokemons => {
       id: poke.id,
       type: poke.types
         .map(
-          types =>
-            types.type.name[0].toUpperCase() + types.type.name.slice(1)
+          types => types.type.name[0].toUpperCase() + types.type.name.slice(1)
         )
         .join(', '),
       types: poke.types.map(types => types.type.name),
     };
   });
 
-  return mappedPokemons
-;
+  return mappedPokemons;
 
   // let pokemons = [];
   // for (let i = rangeOfPokemons[0]; i <= rangeOfPokemons[1]; i++) {
