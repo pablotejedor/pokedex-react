@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { AppRouter } from './components/routers/AppRouter';
 import './index.css';
-import { Pokedex } from './Pokedex';
+
 
 
 
 ReactDOM.render(
-  <Pokedex />,
+  <AppRouter />,
   document.getElementById('root')
 );
 

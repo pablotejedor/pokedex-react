@@ -25,9 +25,11 @@ export const Pokedex = () => {
   };
 
   return (
-    <>
-      <h1>Pokedex</h1>
-      <h3>Gotta catch' em all!</h3>
+    <div className='pokedex'>
+      <div className="title">
+        <h1>Pokedex</h1>
+        <h3>Gotta catch' em all!</h3>
+      </div>
       <div className="buttons-container">
         <button onClick={previousHandler}>Previous</button>
         <button onClick={nextHandler}>Next</button>
@@ -37,6 +39,6 @@ export const Pokedex = () => {
         <button onClick={previousHandler}>Previous</button>
         <button onClick={nextHandler}>Next</button>
       </div>
-    </>
+    </div>
   );
 };
