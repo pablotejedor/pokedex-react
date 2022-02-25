@@ -13,11 +13,11 @@ import NavBar from '../ui/NavBar';
 export const AppRouter = () => {
   return (
     <Router>
-        <NavBar className='navbar'/>
+        {/* <NavBar className='navbar'/> */}
         <Switch>
           <Route exact path="/" component={PokedexScreen} />
-          <Route exact path="/about" component={AboutScreen} />
-          <Route exact path="/search" component={SearchScreen} />
+          {/* <Route exact path="/about" component={AboutScreen} />
+          <Route exact path="/search" component={SearchScreen} /> */}
           <Redirect to="/" />
         </Switch>
     </Router>
