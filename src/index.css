@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
 body {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -9,11 +8,12 @@ body {
   background-color: #edf6f9;
 }
 
-#root {
-  align-items: center;
+
+
+.title {
   display: flex;
   flex-direction: column;
-  padding: 10vh;
+  align-items: center;
 }
 
 .poke-container {
@@ -22,6 +22,11 @@ body {
   align-items: space-between;
   justify-content: center;
   margin: 0 auto;
+}
+
+.poke-img {
+  height: 150px;
+  width: 150px;
 }
 
 .poke-card {
@@ -37,12 +42,23 @@ body {
   width: 140px;
 }
 
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  /* justify-content: flex-start; */
+  gap: 30px;
+  /* width: 100%; */
+}
+
 button {
   background-color: #f0f0f0;
   border-radius: 5px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
   color: #222224;
-  /* font-size: 1rem; */
   margin: 10px;
   padding: 10px;
   width: 10vw;
@@ -56,6 +72,12 @@ button:hover {
   display: flex;
   justify-content: space-between;
   width: 80vw;
+}
+
+.pokedex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
