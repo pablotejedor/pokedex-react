@@ -5,10 +5,10 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import {AboutScreen } from '../Screens/AboutScreen';
+// import {AboutScreen } from '../Screens/AboutScreen';
 import { PokedexScreen } from '../Screens/PokedexScreen';
-import { SearchScreen } from '../Screens/SearchScreen';
-import NavBar from '../ui/NavBar';
+// import { SearchScreen } from '../Screens/SearchScreen';
+// import NavBar from '../ui/NavBar';
 
 export const AppRouter = () => {
   return (
