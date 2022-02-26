@@ -7,7 +7,7 @@ export const getPokemons = async rangeOfPokemons => {
   let pokemons = await Promise.all(promises);
   let mappedPokemons = pokemons.map(poke => {
     return {
-      img: poke.sprites.other.dream_world.front_default,
+      img: poke.sprites.other['official-artwork'].front_default,
       name: poke.name,
       id: poke.id,
       type: poke.types

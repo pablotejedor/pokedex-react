@@ -8,8 +8,6 @@ body {
   background-color: #edf6f9;
 }
 
-
-
 .title {
   display: flex;
   flex-direction: column;
@@ -22,6 +20,7 @@ body {
   align-items: space-between;
   justify-content: center;
   margin: 0 auto;
+  /* margin: 15vh 0; */
 }
 
 .poke-img {
@@ -40,6 +39,12 @@ body {
   padding: 20px;
   text-align: center;
   width: 140px;
+  height: 333px;
+}
+
+.poke-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .search {
@@ -49,9 +54,7 @@ body {
 }
 .navbar {
   display: flex;
-  /* justify-content: flex-start; */
   gap: 30px;
-  /* width: 100%; */
 }
 
 button {
@@ -68,10 +71,15 @@ button:hover {
   transform: scale(1.1);
 }
 
+a {
+  text-decoration: none;
+}
+
 .buttons-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 80vw;
+  margin: 5vh;
 }
 
 .pokedex {
@@ -89,7 +97,7 @@ button:hover {
   button {
     width: 20vw;
   }
-    
+
   .poke-card {
     width: 30vw;
   }
